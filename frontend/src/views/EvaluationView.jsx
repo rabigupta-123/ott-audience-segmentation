@@ -7,15 +7,7 @@ import ModelCard from '../components/ModelCard';
 export default function EvaluationView({ metricsData }) {
   const [activeTab, setActiveTab] = useState('benchmark');
 
-  const defaultMetrics = {
-    clustering: { silhouette_score: 0.3324, inertia: 44463.89, n_clusters: 3 },
-    cluster_balance: { min_cluster_size: 1159, max_cluster_size: 2546 },
-    api: { health_check: true, valid_requests_passed: 4, invalid_requests_handled: 9, total_tests: 13, passed_tests: 13 },
-    reproducibility: { random_seed: 42 },
-    overall_status: "PASS"
-  };
-
-  const metrics = metricsData || defaultMetrics;
+  const metrics = metricsData || {};
 
   const kGridData = [
     { k: 'K=2', silhouette: 0.3169, inertia: 53709, bootMean: 0.3177 },

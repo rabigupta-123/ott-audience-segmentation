@@ -19,56 +19,8 @@ import {
 } from 'recharts';
 
 export default function SegmentsView({ segmentProfiles, projectionsData }) {
-  const defaultProfiles = [
-    {
-      segment_id: 0,
-      segment_name: "Genre Explorers & Variety Seekers",
-      description: "Enthusiastic viewers exploring multiple distinct genres across diverse catalog offerings.",
-      population: 1159,
-      percentage: 23.18,
-      avg_watch_time_hours: 39.9,
-      avg_session_mins: 50.0,
-      avg_total_sessions: 44.3,
-      short_session_ratio: 0.35,
-      recency_days: 3.5,
-      dominant_genres: ["Drama", "Horror"],
-      recommendation_strategy: "Offer curated multi-genre discovery carousels and genre crossover recommendations.",
-      dna_profile: { watch_time_hours: 58, avg_session_mins: 55, total_sessions: 65, short_session_ratio: 45, recency_days: 35, genre_diversity: 85 }
-    },
-    {
-      segment_id: 1,
-      segment_name: "Casual Short-Session Comedy Viewers",
-      description: "Viewers with quick, frequent sessions preferring light episodic or bite-sized entertainment.",
-      population: 2546,
-      percentage: 50.92,
-      avg_watch_time_hours: 10.7,
-      avg_session_mins: 23.0,
-      avg_total_sessions: 17.4,
-      short_session_ratio: 0.65,
-      recency_days: 14.0,
-      dominant_genres: ["Comedy", "Romance"],
-      recommendation_strategy: "Recommend short-duration episodes, comedy clips, and quick-watch trending titles.",
-      dna_profile: { watch_time_hours: 25, avg_session_mins: 30, total_sessions: 35, short_session_ratio: 85, recency_days: 70, genre_diversity: 30 }
-    },
-    {
-      segment_id: 2,
-      segment_name: "High-Engagement Action Viewers",
-      description: "Power viewers with high cumulative watch time, long viewing sessions, and heavy genre commitment.",
-      population: 1295,
-      percentage: 25.9,
-      avg_watch_time_hours: 64.0,
-      avg_session_mins: 84.4,
-      avg_total_sessions: 46.7,
-      short_session_ratio: 0.13,
-      recency_days: 2.5,
-      dominant_genres: ["Action", "Sci-Fi"],
-      recommendation_strategy: "Promote long-form content, deep series marathons, and newly released blockbusters.",
-      dna_profile: { watch_time_hours: 90, avg_session_mins: 92, total_sessions: 70, short_session_ratio: 15, recency_days: 25, genre_diversity: 45 }
-    }
-  ];
-
-  const profiles = segmentProfiles && segmentProfiles.length > 0 ? segmentProfiles : defaultProfiles;
-  const userProjections = projectionsData && projectionsData.length > 0 ? projectionsData : [];
+  const profiles = segmentProfiles || [];
+  const userProjections = projectionsData || [];
 
   const COLORS = ['#6366F1', '#06B6D4', '#10B981'];
 

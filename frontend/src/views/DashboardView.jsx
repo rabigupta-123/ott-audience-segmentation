@@ -6,21 +6,15 @@ import { ResponsiveContainer, PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, 
 export default function DashboardView({ metricsData, segmentProfiles, setActiveTab }) {
   const COLORS = ['#6366F1', '#06B6D4', '#10B981', '#F59E0B'];
 
-  const totalUsers = 5000;
-  const nClusters = metricsData?.clustering?.n_clusters || segmentProfiles.length || 3;
-  const silScore = metricsData?.clustering?.silhouette_score || 0.3324;
+  const totalUsers = metricsData?.clustering?.total_users || 5000;
+  const nClusters = metricsData?.clustering?.n_clusters || segmentProfiles?.length || 0;
+  const silScore = metricsData?.clustering?.silhouette_score !== undefined ? metricsData.clustering.silhouette_score : "Calculating...";
 
-  const defaultProfiles = [
-    { segment_name: "Genre Explorers & Variety Seekers", population: 1159, percentage: 23.18, avg_watch_time_hours: 39.9, avg_session_mins: 50.0 },
-    { segment_name: "Casual Short-Session Comedy Viewers", population: 2546, percentage: 50.92, avg_watch_time_hours: 10.7, avg_session_mins: 23.0 },
-    { segment_name: "High-Engagement Action Viewers", population: 1295, percentage: 25.9, avg_watch_time_hours: 64.0, avg_session_mins: 84.4 }
-  ];
-
-  const profiles = segmentProfiles && segmentProfiles.length > 0 ? segmentProfiles : defaultProfiles;
+  const profiles = segmentProfiles || [];
 
   const chartData = profiles.map((s, idx) => ({
     name: s.segment_name,
-    shortName: s.segment_name.split(' ')[0] + ' ' + (s.segment_name.split(' ')[1] || ''),
+    shortName: s.segment_name ? (s.segment_name.split(' ')[0] + ' ' + (s.segment_name.split(' ')[1] || '')) : `Cohort ${idx}`,
     population: s.population,
     percentage: s.percentage,
     avg_watch_time: s.avg_watch_time_hours,
