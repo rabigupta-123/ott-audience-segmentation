@@ -1,0 +1,134 @@
+[
+  {
+    "segment_id": 0,
+    "segment_name": "Genre Explorers & Variety Seekers",
+    "description": "Enthusiastic viewers exploring multiple distinct genres across diverse catalog offerings.",
+    "population": 1151,
+    "percentage": 23.02,
+    "avg_watch_time_hours": 39.9,
+    "avg_session_mins": 49.9,
+    "avg_total_sessions": 44.3,
+    "short_session_ratio": 0.35,
+    "recency_days": 3.5,
+    "shannon_genre_entropy": 1.3687,
+    "dominant_genres": [
+      "Drama",
+      "Horror"
+    ],
+    "recommendation_strategy": "Offer curated multi-genre discovery carousels and genre crossover recommendations.",
+    "centroid": [
+      0.3436546855072263,
+      0.7103358829552539,
+      0.16599262302156575,
+      0.13276495544590267,
+      -0.4801803564810504,
+      -0.36863613395815675,
+      1.2542720062885624,
+      0.19764193974930522,
+      0.20293764036744644,
+      0.6280844594706705,
+      0.2623938244277259,
+      0.2107523436611178,
+      0.4607243223609763,
+      0.6027484942225585,
+      0.4187098262517714,
+      1.1732357523095291
+    ],
+    "dna_profile": {
+      "watch_time_hours": 56.9,
+      "avg_session_mins": 53.3,
+      "total_sessions": 64.2,
+      "short_session_ratio": 42.6,
+      "recency_days": 40.4,
+      "genre_diversity": 75.1
+    }
+  },
+  {
+    "segment_id": 1,
+    "segment_name": "Casual Short-Session Comedy Viewers",
+    "description": "Viewers with quick, frequent sessions preferring light episodic or bite-sized entertainment.",
+    "population": 2546,
+    "percentage": 50.92,
+    "avg_watch_time_hours": 10.7,
+    "avg_session_mins": 23.0,
+    "avg_total_sessions": 17.4,
+    "short_session_ratio": 0.65,
+    "recency_days": 14.0,
+    "shannon_genre_entropy": 0.3493,
+    "dominant_genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "recommendation_strategy": "Recommend short-duration episodes, comedy clips, and quick-watch trending titles.",
+    "centroid": [
+      -0.8174748044379659,
+      -0.7514185268394091,
+      -0.7675040033514575,
+      -0.4802207301884048,
+      0.5077158124933289,
+      0.7988112759189399,
+      -0.7475813556099482,
+      -0.6752984197647407,
+      0.2865350888388111,
+      -0.021927854406939853,
+      -0.6709068558903997,
+      -0.6727880882843904,
+      0.08026305726352678,
+      -0.02038281593347596,
+      0.0924500868000563,
+      -0.350842907484609
+    ],
+    "dna_profile": {
+      "watch_time_hours": 33.7,
+      "avg_session_mins": 34.7,
+      "total_sessions": 35.0,
+      "short_session_ratio": 66.0,
+      "recency_days": 60.2,
+      "genre_diversity": 35.0
+    }
+  },
+  {
+    "segment_id": 2,
+    "segment_name": "High-Engagement Action Viewers",
+    "description": "Power viewers with high cumulative watch time, long viewing sessions, and heavy genre commitment.",
+    "population": 1303,
+    "percentage": 26.06,
+    "avg_watch_time_hours": 63.8,
+    "avg_session_mins": 84.2,
+    "avg_total_sessions": 46.7,
+    "short_session_ratio": 0.13,
+    "recency_days": 2.5,
+    "shannon_genre_entropy": 0.9096,
+    "dominant_genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "recommendation_strategy": "Promote long-form content, deep series marathons, and newly released blockbusters.",
+    "centroid": [
+      1.2937408358252054,
+      0.8407635978907425,
+      1.3530373625748184,
+      0.8210510478445467,
+      -0.5678870823471437,
+      -1.2352059234871693,
+      0.35278208146184753,
+      1.144914738349631,
+      -0.7391401076335682,
+      -0.511969988895378,
+      1.079135505127128,
+      1.1284286456010046,
+      -0.5638092393172863,
+      -0.49260849384768574,
+      -0.5505087728386305,
+      -0.35084290748461133
+    ],
+    "dna_profile": {
+      "watch_time_hours": 75.9,
+      "avg_session_mins": 77.1,
+      "total_sessions": 66.8,
+      "short_session_ratio": 25.3,
+      "recency_days": 38.6,
+      "genre_diversity": 57.1
+    }
+  }
+]

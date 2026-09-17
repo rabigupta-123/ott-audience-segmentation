@@ -1,0 +1,14 @@
+{
+  "trained_at": "2026-09-17T19:08:11.188231",
+  "original_rows": 5000,
+  "cleaned_rows": 5000,
+  "k_selected": 3,
+  "silhouette_score": 0.3222,
+  "inertia": 44761.54,
+  "bootstrap_mean_silhouette": 0.3229,
+  "pca_explained_variance": [
+    0.3809,
+    0.1248
+  ],
+  "random_seed": 42
+}

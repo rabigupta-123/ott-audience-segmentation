@@ -1,0 +1,3009 @@
+{
+  "explained_variance_ratio": [
+    0.3809,
+    0.1248
+  ],
+  "sample_size": 500,
+  "projections": [
+    {
+      "user_id": "USR-2501",
+      "pc1": -1.8798,
+      "pc2": -1.1185,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3586",
+      "pc1": -1.5495,
+      "pc2": -1.5106,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3653",
+      "pc1": 0.5513,
+      "pc2": -0.6453,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2055",
+      "pc1": 3.1971,
+      "pc2": 0.4578,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1705",
+      "pc1": 0.1763,
+      "pc2": -0.7019,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1106",
+      "pc1": 1.7309,
+      "pc2": -1.737,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1589",
+      "pc1": 3.205,
+      "pc2": 0.7726,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-3468",
+      "pc1": -1.5059,
+      "pc2": -1.2292,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3413",
+      "pc1": 4.2621,
+      "pc2": 0.8048,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-2600",
+      "pc1": 1.0383,
+      "pc2": -0.2662,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-3464",
+      "pc1": -2.1992,
+      "pc2": -2.3271,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1228",
+      "pc1": 2.1348,
+      "pc2": 0.9512,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1915",
+      "pc1": 1.1557,
+      "pc2": -1.0155,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1794",
+      "pc1": 3.3793,
+      "pc2": 0.7859,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-4021",
+      "pc1": 3.4119,
+      "pc2": 0.9188,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-4543",
+      "pc1": -2.2963,
+      "pc2": -0.722,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2073",
+      "pc1": 1.7435,
+      "pc2": -1.9863,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4351",
+      "pc1": -2.2172,
+      "pc2": -1.1542,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2744",
+      "pc1": 3.2206,
+      "pc2": 0.8045,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-2084",
+      "pc1": -2.5182,
+      "pc2": 2.7714,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1926",
+      "pc1": -2.01,
+      "pc2": -1.3705,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4049",
+      "pc1": -2.6947,
+      "pc2": 1.5531,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2117",
+      "pc1": 2.5608,
+      "pc2": 0.7596,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1642",
+      "pc1": -2.0438,
+      "pc2": -2.13,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5767",
+      "pc1": 2.437,
+      "pc2": 0.9442,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1501",
+      "pc1": 1.2394,
+      "pc2": -1.8226,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-5066",
+      "pc1": 1.8809,
+      "pc2": 0.5984,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1333",
+      "pc1": -3.2566,
+      "pc2": 2.2083,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5684",
+      "pc1": -2.0394,
+      "pc2": -0.2026,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1486",
+      "pc1": 0.6712,
+      "pc2": -0.664,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2962",
+      "pc1": -1.6084,
+      "pc2": -0.7587,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1393",
+      "pc1": -2.1049,
+      "pc2": -0.32,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5842",
+      "pc1": -1.764,
+      "pc2": -1.7775,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5866",
+      "pc1": 4.0487,
+      "pc2": 0.5129,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-2755",
+      "pc1": -2.2089,
+      "pc2": -0.9736,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3515",
+      "pc1": 0.7724,
+      "pc2": -2.3698,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4585",
+      "pc1": -0.4451,
+      "pc2": -2.6,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-5315",
+      "pc1": -2.8555,
+      "pc2": 2.2819,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5966",
+      "pc1": -2.7603,
+      "pc2": 1.7705,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3099",
+      "pc1": 3.3488,
+      "pc2": 0.7858,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-4599",
+      "pc1": -2.1348,
+      "pc2": -1.5279,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5121",
+      "pc1": 0.7005,
+      "pc2": -0.9174,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1029",
+      "pc1": 3.0246,
+      "pc2": 0.8066,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1065",
+      "pc1": 0.9099,
+      "pc2": -2.3813,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1838",
+      "pc1": -1.7946,
+      "pc2": -0.7122,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4906",
+      "pc1": -2.6652,
+      "pc2": -0.84,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4773",
+      "pc1": 1.1592,
+      "pc2": 0.0027,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-5635",
+      "pc1": -1.6923,
+      "pc2": -1.39,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4161",
+      "pc1": -2.0118,
+      "pc2": -2.307,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3659",
+      "pc1": -2.0509,
+      "pc2": -2.6899,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5615",
+      "pc1": 3.0164,
+      "pc2": 0.6173,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-5628",
+      "pc1": 1.5409,
+      "pc2": -0.3888,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-3451",
+      "pc1": -1.8655,
+      "pc2": 2.347,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3846",
+      "pc1": 0.9673,
+      "pc2": 1.1501,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2144",
+      "pc1": 2.732,
+      "pc2": 0.482,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-4078",
+      "pc1": -1.4855,
+      "pc2": -2.3446,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2103",
+      "pc1": 1.9632,
+      "pc2": -1.5083,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1168",
+      "pc1": 2.5995,
+      "pc2": -0.3619,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2670",
+      "pc1": -1.4145,
+      "pc2": -1.499,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3570",
+      "pc1": -1.4382,
+      "pc2": -2.4381,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3377",
+      "pc1": 3.2279,
+      "pc2": 0.8621,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-5395",
+      "pc1": -2.6414,
+      "pc2": -0.4236,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5257",
+      "pc1": 1.2948,
+      "pc2": -1.1863,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4862",
+      "pc1": -2.9036,
+      "pc2": 1.4376,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1023",
+      "pc1": 3.7622,
+      "pc2": 0.731,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-3633",
+      "pc1": -2.1803,
+      "pc2": 1.3551,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4340",
+      "pc1": -2.8652,
+      "pc2": 2.2247,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3215",
+      "pc1": 1.4981,
+      "pc2": -2.4114,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4682",
+      "pc1": 3.7682,
+      "pc2": 0.4885,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-5724",
+      "pc1": -1.5472,
+      "pc2": 1.3908,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2907",
+      "pc1": 2.0735,
+      "pc2": -0.4123,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1084",
+      "pc1": -1.3367,
+      "pc2": -2.3648,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1227",
+      "pc1": -1.6847,
+      "pc2": -0.63,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1296",
+      "pc1": 0.2319,
+      "pc2": -1.7786,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2001",
+      "pc1": -2.1176,
+      "pc2": -0.2,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3138",
+      "pc1": -2.7039,
+      "pc2": 2.6336,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1711",
+      "pc1": -1.9824,
+      "pc2": -1.3967,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3801",
+      "pc1": 2.683,
+      "pc2": 0.4723,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-3527",
+      "pc1": -2.2283,
+      "pc2": 1.1618,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4752",
+      "pc1": -1.9603,
+      "pc2": -0.7794,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4321",
+      "pc1": 2.9052,
+      "pc2": 0.7584,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-4181",
+      "pc1": -2.9691,
+      "pc2": 2.3879,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5183",
+      "pc1": -1.7048,
+      "pc2": -1.4734,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2615",
+      "pc1": 1.723,
+      "pc2": -0.6121,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4024",
+      "pc1": -2.7491,
+      "pc2": 2.6633,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2413",
+      "pc1": 1.1798,
+      "pc2": -0.338,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1763",
+      "pc1": 0.0261,
+      "pc2": -0.6257,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1655",
+      "pc1": -2.7725,
+      "pc2": 2.5031,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5797",
+      "pc1": -1.9263,
+      "pc2": -1.1923,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4849",
+      "pc1": 1.1534,
+      "pc2": -0.1724,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-5153",
+      "pc1": 1.6095,
+      "pc2": 0.8685,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1468",
+      "pc1": 3.7958,
+      "pc2": 0.8333,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1157",
+      "pc1": 1.461,
+      "pc2": -1.4062,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2295",
+      "pc1": 0.128,
+      "pc2": -1.2753,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1497",
+      "pc1": -2.5946,
+      "pc2": 2.3956,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5740",
+      "pc1": -2.3809,
+      "pc2": 1.8833,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3940",
+      "pc1": 1.7653,
+      "pc2": -1.0947,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4456",
+      "pc1": -1.9089,
+      "pc2": -2.0097,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1373",
+      "pc1": 0.6103,
+      "pc2": 0.5049,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1079",
+      "pc1": 0.9155,
+      "pc2": -2.9877,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2553",
+      "pc1": -1.4153,
+      "pc2": 0.028,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2669",
+      "pc1": 4.3473,
+      "pc2": 1.206,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-3131",
+      "pc1": -2.0416,
+      "pc2": 0.0462,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5439",
+      "pc1": -2.2738,
+      "pc2": 2.9847,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1465",
+      "pc1": 2.7957,
+      "pc2": -1.712,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1248",
+      "pc1": 3.5899,
+      "pc2": 0.6949,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1931",
+      "pc1": 0.4697,
+      "pc2": -1.3158,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2335",
+      "pc1": -1.8079,
+      "pc2": -0.5749,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5524",
+      "pc1": -2.8353,
+      "pc2": 1.5037,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2338",
+      "pc1": 2.9464,
+      "pc2": 0.939,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-2406",
+      "pc1": -0.1236,
+      "pc2": -2.2691,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2090",
+      "pc1": 1.4643,
+      "pc2": -0.699,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-5209",
+      "pc1": 3.1072,
+      "pc2": 1.2743,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1742",
+      "pc1": 1.3559,
+      "pc2": -1.7933,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-3323",
+      "pc1": 1.1789,
+      "pc2": -1.5108,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4601",
+      "pc1": -1.7893,
+      "pc2": -2.114,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3123",
+      "pc1": -1.9665,
+      "pc2": -0.9613,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3094",
+      "pc1": 1.9469,
+      "pc2": -0.4046,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1240",
+      "pc1": -1.8712,
+      "pc2": -1.6311,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3351",
+      "pc1": 3.634,
+      "pc2": 1.0548,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-2370",
+      "pc1": -2.2924,
+      "pc2": -0.3911,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2057",
+      "pc1": 4.1301,
+      "pc2": 0.8799,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-5816",
+      "pc1": 1.3445,
+      "pc2": -1.8988,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1199",
+      "pc1": 0.5607,
+      "pc2": -0.6537,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-3280",
+      "pc1": 1.92,
+      "pc2": 0.9234,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-5749",
+      "pc1": -2.4625,
+      "pc2": -0.1263,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3220",
+      "pc1": 0.9533,
+      "pc2": 0.3212,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-5771",
+      "pc1": -2.8087,
+      "pc2": 1.4155,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3819",
+      "pc1": 2.0247,
+      "pc2": -0.2548,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4150",
+      "pc1": -1.4351,
+      "pc2": -1.805,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5256",
+      "pc1": 1.7023,
+      "pc2": -1.7558,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4107",
+      "pc1": -2.4949,
+      "pc2": 0.9374,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2973",
+      "pc1": 2.4982,
+      "pc2": 0.5387,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-2375",
+      "pc1": -2.7497,
+      "pc2": -1.1788,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4968",
+      "pc1": -2.9987,
+      "pc2": 1.9242,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5062",
+      "pc1": 1.9768,
+      "pc2": -0.5589,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-5445",
+      "pc1": 3.1982,
+      "pc2": 0.9419,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-4557",
+      "pc1": -2.2864,
+      "pc2": -1.3552,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1964",
+      "pc1": -3.2581,
+      "pc2": 1.3123,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1179",
+      "pc1": 3.6082,
+      "pc2": 0.6216,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-4698",
+      "pc1": 0.9022,
+      "pc2": -0.3555,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4821",
+      "pc1": 1.3648,
+      "pc2": -1.194,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-5878",
+      "pc1": -2.385,
+      "pc2": 1.9995,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4899",
+      "pc1": -1.9798,
+      "pc2": -1.0976,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5487",
+      "pc1": 4.0817,
+      "pc2": 1.1723,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-4238",
+      "pc1": 0.7306,
+      "pc2": -2.0947,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-3974",
+      "pc1": 3.3289,
+      "pc2": 1.0849,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-4580",
+      "pc1": -2.2491,
+      "pc2": 0.1772,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3887",
+      "pc1": -1.6515,
+      "pc2": -0.7047,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3575",
+      "pc1": 1.4396,
+      "pc2": 1.1185,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2419",
+      "pc1": -1.4141,
+      "pc2": -0.9559,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4907",
+      "pc1": -2.1148,
+      "pc2": 2.1193,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5673",
+      "pc1": -2.3829,
+      "pc2": -0.1903,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5902",
+      "pc1": -1.972,
+      "pc2": -2.304,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2860",
+      "pc1": 3.2725,
+      "pc2": 0.5555,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1008",
+      "pc1": -2.648,
+      "pc2": 3.1726,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3894",
+      "pc1": 1.6065,
+      "pc2": -2.1411,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-3847",
+      "pc1": 3.209,
+      "pc2": 0.7078,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-4664",
+      "pc1": 3.193,
+      "pc2": 0.7237,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1144",
+      "pc1": -2.3242,
+      "pc2": -1.28,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3104",
+      "pc1": -2.3874,
+      "pc2": 1.0263,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4143",
+      "pc1": 1.0699,
+      "pc2": -2.3625,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1841",
+      "pc1": -2.7604,
+      "pc2": 3.0579,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2128",
+      "pc1": -1.7226,
+      "pc2": -2.3787,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1151",
+      "pc1": 3.1944,
+      "pc2": 1.2967,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-4591",
+      "pc1": 3.9539,
+      "pc2": 0.5374,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-2052",
+      "pc1": 0.9399,
+      "pc2": -0.2838,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2590",
+      "pc1": -2.4437,
+      "pc2": 1.0699,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4008",
+      "pc1": -2.5918,
+      "pc2": 2.0092,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3029",
+      "pc1": -3.4138,
+      "pc2": 2.1525,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4418",
+      "pc1": 1.1227,
+      "pc2": -2.4617,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2807",
+      "pc1": 0.719,
+      "pc2": -0.8587,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-3696",
+      "pc1": 1.4015,
+      "pc2": -0.5444,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4039",
+      "pc1": -2.9835,
+      "pc2": 2.8805,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1472",
+      "pc1": -2.1796,
+      "pc2": -0.9476,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4289",
+      "pc1": 1.709,
+      "pc2": -0.9605,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-5074",
+      "pc1": -2.1709,
+      "pc2": 2.9528,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4496",
+      "pc1": -2.7557,
+      "pc2": 1.7812,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1279",
+      "pc1": -3.037,
+      "pc2": 2.3278,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2741",
+      "pc1": -1.6482,
+      "pc2": -2.3484,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5624",
+      "pc1": 4.087,
+      "pc2": 0.92,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-3886",
+      "pc1": -2.8538,
+      "pc2": 2.1251,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2941",
+      "pc1": 4.3236,
+      "pc2": 0.5373,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1100",
+      "pc1": 0.7509,
+      "pc2": -3.1019,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-3804",
+      "pc1": 0.5194,
+      "pc2": -1.2658,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4570",
+      "pc1": 1.36,
+      "pc2": -1.6713,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4684",
+      "pc1": -1.9892,
+      "pc2": -0.8423,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4661",
+      "pc1": 4.1827,
+      "pc2": 0.7799,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1530",
+      "pc1": 3.6098,
+      "pc2": 0.7227,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-2886",
+      "pc1": -1.9036,
+      "pc2": 2.5404,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1681",
+      "pc1": -1.953,
+      "pc2": -0.7409,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4794",
+      "pc1": 3.3976,
+      "pc2": 0.8425,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-4944",
+      "pc1": -3.0726,
+      "pc2": 1.3261,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5666",
+      "pc1": -1.999,
+      "pc2": -0.236,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3018",
+      "pc1": -2.1098,
+      "pc2": -1.3689,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2096",
+      "pc1": -1.9805,
+      "pc2": -1.9914,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1829",
+      "pc1": -2.0663,
+      "pc2": -0.851,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3805",
+      "pc1": -1.7063,
+      "pc2": -0.8221,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4829",
+      "pc1": 0.6649,
+      "pc2": -0.8489,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-5381",
+      "pc1": 1.1791,
+      "pc2": -1.7062,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4891",
+      "pc1": -1.5465,
+      "pc2": -2.5016,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1764",
+      "pc1": 1.7056,
+      "pc2": -0.9099,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-3767",
+      "pc1": -1.6998,
+      "pc2": -0.9387,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5328",
+      "pc1": -2.2176,
+      "pc2": -1.7353,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4295",
+      "pc1": -1.6567,
+      "pc2": -2.4275,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3194",
+      "pc1": 3.0404,
+      "pc2": 0.3891,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-3357",
+      "pc1": 2.6126,
+      "pc2": 0.7909,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-4425",
+      "pc1": -2.7304,
+      "pc2": 2.7676,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4979",
+      "pc1": 2.7625,
+      "pc2": 0.474,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1911",
+      "pc1": 1.5812,
+      "pc2": -0.1239,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4145",
+      "pc1": 0.5423,
+      "pc2": 0.3526,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1999",
+      "pc1": -1.7694,
+      "pc2": -0.2832,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4653",
+      "pc1": -2.6659,
+      "pc2": 2.2749,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3483",
+      "pc1": 1.5978,
+      "pc2": -0.6708,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-5076",
+      "pc1": -2.1716,
+      "pc2": 1.341,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3370",
+      "pc1": 1.9451,
+      "pc2": -0.5682,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-5838",
+      "pc1": 3.7358,
+      "pc2": 0.9456,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1033",
+      "pc1": 2.8199,
+      "pc2": 0.6563,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-4789",
+      "pc1": -2.0879,
+      "pc2": -1.8893,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2020",
+      "pc1": -2.8297,
+      "pc2": 3.0478,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2647",
+      "pc1": 1.7674,
+      "pc2": -0.5947,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1733",
+      "pc1": -0.0247,
+      "pc2": 0.766,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-5582",
+      "pc1": 1.8197,
+      "pc2": -0.9674,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4274",
+      "pc1": 0.262,
+      "pc2": -3.3866,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2620",
+      "pc1": -2.236,
+      "pc2": -0.7604,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4135",
+      "pc1": 3.4099,
+      "pc2": 0.7082,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-3689",
+      "pc1": -2.2608,
+      "pc2": -1.308,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3707",
+      "pc1": 1.0453,
+      "pc2": -1.2597,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1297",
+      "pc1": -2.188,
+      "pc2": -0.1225,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3339",
+      "pc1": -1.7579,
+      "pc2": 1.9779,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1653",
+      "pc1": -2.1604,
+      "pc2": 2.5676,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4774",
+      "pc1": 3.6154,
+      "pc2": 0.3964,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-2255",
+      "pc1": 0.7482,
+      "pc2": -1.9206,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-5520",
+      "pc1": -2.9243,
+      "pc2": 1.1922,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1230",
+      "pc1": 3.377,
+      "pc2": 0.4297,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-4276",
+      "pc1": -2.1113,
+      "pc2": -2.1036,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4230",
+      "pc1": 2.9117,
+      "pc2": 0.9357,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1691",
+      "pc1": -1.7784,
+      "pc2": -1.2272,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3754",
+      "pc1": -2.3187,
+      "pc2": -0.123,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5863",
+      "pc1": -2.2014,
+      "pc2": -1.062,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1969",
+      "pc1": -1.4687,
+      "pc2": -0.5622,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1633",
+      "pc1": 2.905,
+      "pc2": 0.9949,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-5092",
+      "pc1": -2.0412,
+      "pc2": 2.8142,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5077",
+      "pc1": 0.8236,
+      "pc2": -0.2982,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2321",
+      "pc1": -1.9911,
+      "pc2": -1.392,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2831",
+      "pc1": -2.7098,
+      "pc2": 1.1559,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3178",
+      "pc1": -2.8073,
+      "pc2": 1.0948,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2417",
+      "pc1": 1.1048,
+      "pc2": -0.2672,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2782",
+      "pc1": -2.3148,
+      "pc2": -0.2741,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5715",
+      "pc1": 3.0206,
+      "pc2": 0.7339,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-5701",
+      "pc1": -1.9787,
+      "pc2": -1.2508,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5118",
+      "pc1": -1.5447,
+      "pc2": -1.4865,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2652",
+      "pc1": 2.2111,
+      "pc2": 0.6782,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-2483",
+      "pc1": -2.2433,
+      "pc2": 0.5214,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3275",
+      "pc1": 0.1814,
+      "pc2": -1.4678,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1877",
+      "pc1": 2.1932,
+      "pc2": 0.9795,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-4525",
+      "pc1": -2.4623,
+      "pc2": 2.3005,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3016",
+      "pc1": 2.1716,
+      "pc2": 0.8845,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1426",
+      "pc1": 2.4785,
+      "pc2": 0.4272,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1626",
+      "pc1": 3.3497,
+      "pc2": 0.4649,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-2589",
+      "pc1": 1.8486,
+      "pc2": -0.86,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-3223",
+      "pc1": -2.401,
+      "pc2": 2.4887,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3217",
+      "pc1": -2.4493,
+      "pc2": 2.6539,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5483",
+      "pc1": 3.9062,
+      "pc2": 0.3731,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-2485",
+      "pc1": -2.5783,
+      "pc2": 1.3354,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2739",
+      "pc1": 2.7704,
+      "pc2": 0.921,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-3480",
+      "pc1": 2.7558,
+      "pc2": -1.088,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-3584",
+      "pc1": 4.516,
+      "pc2": 1.0813,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-3893",
+      "pc1": 3.1601,
+      "pc2": 1.2716,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1149",
+      "pc1": 4.5636,
+      "pc2": 1.0362,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1676",
+      "pc1": 2.5862,
+      "pc2": 0.8995,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-2261",
+      "pc1": 4.4513,
+      "pc2": 0.559,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-5917",
+      "pc1": -2.2602,
+      "pc2": -0.172,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1012",
+      "pc1": -3.3086,
+      "pc2": 1.2296,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2833",
+      "pc1": -3.4726,
+      "pc2": 1.2939,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4248",
+      "pc1": -3.1602,
+      "pc2": 1.1747,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2491",
+      "pc1": 1.94,
+      "pc2": -0.3454,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-3727",
+      "pc1": -1.4221,
+      "pc2": -2.0661,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4686",
+      "pc1": 1.8726,
+      "pc2": -1.7514,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2424",
+      "pc1": -2.0726,
+      "pc2": 0.1789,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5605",
+      "pc1": 4.6977,
+      "pc2": 0.3705,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-5595",
+      "pc1": 2.8393,
+      "pc2": 0.8614,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1731",
+      "pc1": -2.2926,
+      "pc2": -1.1278,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2231",
+      "pc1": -2.7822,
+      "pc2": -0.1672,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2634",
+      "pc1": -2.3442,
+      "pc2": 1.9457,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4936",
+      "pc1": -3.3438,
+      "pc2": 1.6258,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2210",
+      "pc1": -1.6851,
+      "pc2": -2.0416,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4268",
+      "pc1": 1.035,
+      "pc2": -0.2946,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2934",
+      "pc1": 3.9243,
+      "pc2": 0.6799,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1553",
+      "pc1": -1.4982,
+      "pc2": 2.1749,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1491",
+      "pc1": 0.8207,
+      "pc2": -1.1467,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-3962",
+      "pc1": 3.7619,
+      "pc2": 0.5851,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-3329",
+      "pc1": 0.4517,
+      "pc2": -0.9777,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-3195",
+      "pc1": -2.2801,
+      "pc2": -0.0489,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4064",
+      "pc1": -1.9777,
+      "pc2": -1.4966,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1657",
+      "pc1": 2.1918,
+      "pc2": 0.442,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-3374",
+      "pc1": -1.8893,
+      "pc2": -1.1039,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3225",
+      "pc1": -1.4503,
+      "pc2": -2.1183,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5264",
+      "pc1": -2.2858,
+      "pc2": 0.7597,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2170",
+      "pc1": 1.534,
+      "pc2": 0.315,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1132",
+      "pc1": 2.4928,
+      "pc2": 1.0758,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1471",
+      "pc1": -0.4827,
+      "pc2": -1.9456,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4225",
+      "pc1": -1.8524,
+      "pc2": -0.9136,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2405",
+      "pc1": -1.617,
+      "pc2": -2.4617,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3876",
+      "pc1": -1.5486,
+      "pc2": -2.0954,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5504",
+      "pc1": 1.0108,
+      "pc2": -0.0318,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-5692",
+      "pc1": -2.6775,
+      "pc2": -0.1852,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3826",
+      "pc1": 4.4188,
+      "pc2": 1.1539,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1287",
+      "pc1": 0.9166,
+      "pc2": -2.2603,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2869",
+      "pc1": -1.8778,
+      "pc2": -1.6115,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4114",
+      "pc1": -1.8153,
+      "pc2": 2.6898,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4625",
+      "pc1": 2.8159,
+      "pc2": 0.3075,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-3312",
+      "pc1": -1.929,
+      "pc2": -0.9583,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5923",
+      "pc1": 1.1997,
+      "pc2": -1.8028,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2618",
+      "pc1": -2.4434,
+      "pc2": 2.3701,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1994",
+      "pc1": -2.657,
+      "pc2": 2.3285,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2803",
+      "pc1": -2.7351,
+      "pc2": 1.4297,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3642",
+      "pc1": -2.0705,
+      "pc2": -1.2592,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5802",
+      "pc1": 2.3379,
+      "pc2": 0.4279,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-4535",
+      "pc1": -2.0436,
+      "pc2": -0.1651,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5831",
+      "pc1": 3.0254,
+      "pc2": -1.9924,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4911",
+      "pc1": 1.1387,
+      "pc2": -0.6696,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-3107",
+      "pc1": -1.5971,
+      "pc2": -0.7852,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4044",
+      "pc1": 3.4434,
+      "pc2": 1.0661,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1416",
+      "pc1": 0.279,
+      "pc2": -1.1391,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1977",
+      "pc1": -1.7856,
+      "pc2": -1.0936,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3417",
+      "pc1": 3.6642,
+      "pc2": 0.532,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1505",
+      "pc1": 1.3694,
+      "pc2": -1.9438,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-5152",
+      "pc1": 3.1427,
+      "pc2": 0.7263,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-5255",
+      "pc1": -2.0992,
+      "pc2": -0.9663,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4941",
+      "pc1": -2.3193,
+      "pc2": -0.051,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1414",
+      "pc1": -1.6404,
+      "pc2": -0.6794,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5148",
+      "pc1": -1.5917,
+      "pc2": -1.2936,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2183",
+      "pc1": 1.9314,
+      "pc2": 0.5337,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1485",
+      "pc1": -1.607,
+      "pc2": -1.3604,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1893",
+      "pc1": 3.4842,
+      "pc2": 0.5307,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1805",
+      "pc1": 3.1897,
+      "pc2": 0.3468,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1555",
+      "pc1": -2.2338,
+      "pc2": -0.4291,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4825",
+      "pc1": 2.8834,
+      "pc2": -1.5635,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2197",
+      "pc1": -2.8273,
+      "pc2": 1.4195,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5253",
+      "pc1": -3.0891,
+      "pc2": 2.0371,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5058",
+      "pc1": -2.5004,
+      "pc2": 2.6091,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2293",
+      "pc1": -1.8357,
+      "pc2": -0.9077,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3221",
+      "pc1": 2.1186,
+      "pc2": -0.2871,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4504",
+      "pc1": -3.1589,
+      "pc2": 2.024,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4654",
+      "pc1": -2.355,
+      "pc2": 1.9036,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5758",
+      "pc1": -2.1766,
+      "pc2": 0.1015,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4006",
+      "pc1": 1.2005,
+      "pc2": -0.0667,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-3093",
+      "pc1": -2.2259,
+      "pc2": -0.8492,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3187",
+      "pc1": 1.1499,
+      "pc2": -1.2703,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4036",
+      "pc1": 0.3493,
+      "pc2": 0.1703,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4918",
+      "pc1": -2.4105,
+      "pc2": 0.9867,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2272",
+      "pc1": -2.6458,
+      "pc2": 2.6664,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1290",
+      "pc1": 1.5403,
+      "pc2": 0.5602,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-5827",
+      "pc1": -2.0739,
+      "pc2": -0.5113,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1252",
+      "pc1": -1.8153,
+      "pc2": -2.8233,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4245",
+      "pc1": 3.7267,
+      "pc2": 0.5903,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1350",
+      "pc1": 2.5203,
+      "pc2": 1.0412,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-2187",
+      "pc1": 0.7319,
+      "pc2": -1.5268,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2961",
+      "pc1": 3.4588,
+      "pc2": 0.4212,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1422",
+      "pc1": 2.1155,
+      "pc2": -1.0863,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1090",
+      "pc1": 4.3235,
+      "pc2": 0.5896,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-4729",
+      "pc1": -2.3189,
+      "pc2": -0.7572,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3236",
+      "pc1": -1.8997,
+      "pc2": 2.3747,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1670",
+      "pc1": -2.6443,
+      "pc2": 1.698,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4040",
+      "pc1": 1.0423,
+      "pc2": -0.4545,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1026",
+      "pc1": -2.5922,
+      "pc2": 0.9387,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1429",
+      "pc1": -3.6512,
+      "pc2": 1.2851,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1683",
+      "pc1": 1.4445,
+      "pc2": -0.4597,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-5463",
+      "pc1": -2.5198,
+      "pc2": 1.3026,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4945",
+      "pc1": 2.7337,
+      "pc2": 0.3175,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-4523",
+      "pc1": -2.2127,
+      "pc2": 1.9708,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2541",
+      "pc1": 2.4278,
+      "pc2": -2.5475,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-3031",
+      "pc1": -2.0419,
+      "pc2": 1.0738,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3232",
+      "pc1": 0.6765,
+      "pc2": -1.7475,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-5120",
+      "pc1": -3.5405,
+      "pc2": 2.6596,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4235",
+      "pc1": -1.7568,
+      "pc2": 2.7153,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1254",
+      "pc1": -1.6207,
+      "pc2": -1.4197,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2029",
+      "pc1": -2.4165,
+      "pc2": 2.2796,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5392",
+      "pc1": 0.0799,
+      "pc2": -0.4595,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4800",
+      "pc1": -0.0369,
+      "pc2": -1.2824,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-5310",
+      "pc1": -1.8239,
+      "pc2": -1.956,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3509",
+      "pc1": -1.8803,
+      "pc2": -1.9211,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3292",
+      "pc1": -3.1575,
+      "pc2": 1.6632,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2323",
+      "pc1": 2.0329,
+      "pc2": -0.0659,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2550",
+      "pc1": 3.6285,
+      "pc2": 0.9055,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-5647",
+      "pc1": 2.7925,
+      "pc2": 0.6464,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1315",
+      "pc1": 0.1477,
+      "pc2": -0.9958,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2242",
+      "pc1": -2.1117,
+      "pc2": 3.0514,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3450",
+      "pc1": -2.1414,
+      "pc2": 0.0126,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2578",
+      "pc1": 1.3163,
+      "pc2": -1.7825,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-5625",
+      "pc1": -2.0282,
+      "pc2": -1.2404,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4116",
+      "pc1": 4.1586,
+      "pc2": 0.1937,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1069",
+      "pc1": 3.1491,
+      "pc2": 0.346,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1859",
+      "pc1": 1.0854,
+      "pc2": -1.8402,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-3753",
+      "pc1": -1.9349,
+      "pc2": -1.3471,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2632",
+      "pc1": -2.1658,
+      "pc2": -1.1689,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2650",
+      "pc1": 1.0776,
+      "pc2": -1.7672,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4860",
+      "pc1": 1.4701,
+      "pc2": 0.6669,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4106",
+      "pc1": -2.7183,
+      "pc2": 1.4985,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2074",
+      "pc1": 0.4073,
+      "pc2": -0.1027,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-5001",
+      "pc1": -1.5434,
+      "pc2": -0.2694,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1787",
+      "pc1": -2.0541,
+      "pc2": 1.486,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3605",
+      "pc1": 0.9665,
+      "pc2": -1.5151,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4630",
+      "pc1": 1.3012,
+      "pc2": 0.5598,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-3121",
+      "pc1": -2.1052,
+      "pc2": 2.9873,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2874",
+      "pc1": -2.8445,
+      "pc2": 0.9886,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1811",
+      "pc1": -1.902,
+      "pc2": -0.0569,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1387",
+      "pc1": -2.4603,
+      "pc2": 0.0488,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3882",
+      "pc1": -1.739,
+      "pc2": -0.8305,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2175",
+      "pc1": 0.6218,
+      "pc2": 0.0303,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4197",
+      "pc1": 0.4267,
+      "pc2": -0.998,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-3623",
+      "pc1": -2.3338,
+      "pc2": -1.1423,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2351",
+      "pc1": 0.6944,
+      "pc2": -0.9006,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-1410",
+      "pc1": -2.3929,
+      "pc2": -2.0757,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5212",
+      "pc1": -2.653,
+      "pc2": -1.4598,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1109",
+      "pc1": 1.96,
+      "pc2": -1.0183,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-5995",
+      "pc1": -2.3026,
+      "pc2": 2.3486,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4429",
+      "pc1": 1.5475,
+      "pc2": 0.3255,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-3809",
+      "pc1": -2.0587,
+      "pc2": 1.7691,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3594",
+      "pc1": 0.6406,
+      "pc2": -0.1533,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-3836",
+      "pc1": 3.3574,
+      "pc2": 0.4071,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-3372",
+      "pc1": 3.7101,
+      "pc2": 0.2848,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-2235",
+      "pc1": -2.4729,
+      "pc2": -0.2591,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3146",
+      "pc1": -2.261,
+      "pc2": -0.1639,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5975",
+      "pc1": -2.0863,
+      "pc2": -0.8637,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1599",
+      "pc1": 1.6053,
+      "pc2": 1.0049,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2434",
+      "pc1": -1.9668,
+      "pc2": -1.2342,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5996",
+      "pc1": -2.2147,
+      "pc2": -0.659,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1538",
+      "pc1": -2.0074,
+      "pc2": -0.6296,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1721",
+      "pc1": -2.2054,
+      "pc2": -1.5225,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5410",
+      "pc1": -2.4757,
+      "pc2": 1.3718,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2872",
+      "pc1": 2.724,
+      "pc2": 0.5968,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-3845",
+      "pc1": -2.4835,
+      "pc2": 1.2683,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3053",
+      "pc1": -2.0218,
+      "pc2": -0.0695,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3907",
+      "pc1": -1.6119,
+      "pc2": -1.0824,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3254",
+      "pc1": 3.4236,
+      "pc2": 0.8022,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-4912",
+      "pc1": -2.7507,
+      "pc2": 2.869,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1177",
+      "pc1": -2.888,
+      "pc2": 1.8381,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3890",
+      "pc1": 0.6196,
+      "pc2": -1.4477,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-4673",
+      "pc1": -2.3071,
+      "pc2": -0.073,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1080",
+      "pc1": -2.1305,
+      "pc2": -1.6217,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3561",
+      "pc1": 1.4496,
+      "pc2": -1.8243,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2723",
+      "pc1": -3.1738,
+      "pc2": 1.9595,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2617",
+      "pc1": -1.8673,
+      "pc2": -0.7892,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2654",
+      "pc1": -1.7688,
+      "pc2": -1.6151,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3328",
+      "pc1": -1.764,
+      "pc2": -2.5075,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5613",
+      "pc1": -2.4105,
+      "pc2": 1.9301,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1221",
+      "pc1": -1.7808,
+      "pc2": -1.4096,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1093",
+      "pc1": -2.6688,
+      "pc2": 1.294,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3609",
+      "pc1": -1.3477,
+      "pc2": -1.4251,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4382",
+      "pc1": -3.0404,
+      "pc2": 2.8318,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5415",
+      "pc1": -2.5269,
+      "pc2": 1.3938,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2397",
+      "pc1": -0.4613,
+      "pc2": -2.1619,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-5686",
+      "pc1": -1.76,
+      "pc2": -1.6273,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2292",
+      "pc1": 0.4501,
+      "pc2": -1.8047,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-3164",
+      "pc1": -2.2212,
+      "pc2": 1.2095,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3939",
+      "pc1": -1.7441,
+      "pc2": -1.3641,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4668",
+      "pc1": -2.4418,
+      "pc2": -0.9236,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1812",
+      "pc1": -3.2316,
+      "pc2": 2.6833,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2258",
+      "pc1": -1.4736,
+      "pc2": -1.2793,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1889",
+      "pc1": 0.8924,
+      "pc2": -0.677,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-2451",
+      "pc1": -1.993,
+      "pc2": -0.5788,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4316",
+      "pc1": -2.0438,
+      "pc2": -1.1641,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3559",
+      "pc1": 3.9301,
+      "pc2": 0.7798,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-4574",
+      "pc1": -3.0833,
+      "pc2": 1.0932,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3680",
+      "pc1": -1.7176,
+      "pc2": -1.4238,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5651",
+      "pc1": -1.8194,
+      "pc2": -0.9285,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5811",
+      "pc1": 3.5374,
+      "pc2": 0.8654,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-5679",
+      "pc1": 4.2256,
+      "pc2": 0.1467,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-3964",
+      "pc1": 2.1968,
+      "pc2": 0.6984,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-3672",
+      "pc1": -1.8106,
+      "pc2": -0.2747,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1561",
+      "pc1": 1.9616,
+      "pc2": -0.9058,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-3778",
+      "pc1": 0.6729,
+      "pc2": -0.5785,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-3948",
+      "pc1": 3.6597,
+      "pc2": 0.8338,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-3817",
+      "pc1": 0.4455,
+      "pc2": -2.9875,
+      "segment_id": 0
+    },
+    {
+      "user_id": "USR-3758",
+      "pc1": 2.6054,
+      "pc2": 0.5939,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-2756",
+      "pc1": -3.3546,
+      "pc2": 1.5789,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1724",
+      "pc1": 3.7212,
+      "pc2": 0.7977,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1219",
+      "pc1": -3.2058,
+      "pc2": 1.6834,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5139",
+      "pc1": -2.0881,
+      "pc2": -1.3986,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4957",
+      "pc1": 3.7392,
+      "pc2": 0.5944,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-2588",
+      "pc1": -1.7971,
+      "pc2": -0.6838,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4347",
+      "pc1": -1.78,
+      "pc2": -1.7156,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4970",
+      "pc1": -1.7889,
+      "pc2": -1.197,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-5707",
+      "pc1": 4.0078,
+      "pc2": 0.4998,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1043",
+      "pc1": -2.0157,
+      "pc2": 0.4684,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4001",
+      "pc1": 2.6272,
+      "pc2": 1.2345,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1210",
+      "pc1": 2.2139,
+      "pc2": 0.8581,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1677",
+      "pc1": -1.7518,
+      "pc2": -0.7631,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1354",
+      "pc1": -1.8055,
+      "pc2": -1.3314,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2433",
+      "pc1": 4.326,
+      "pc2": 0.7998,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1949",
+      "pc1": -2.8401,
+      "pc2": 2.0004,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-3843",
+      "pc1": -1.934,
+      "pc2": 1.0357,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-1577",
+      "pc1": -2.355,
+      "pc2": -0.0216,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4928",
+      "pc1": 3.6804,
+      "pc2": 1.0085,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1544",
+      "pc1": 3.5462,
+      "pc2": 0.6021,
+      "segment_id": 2
+    },
+    {
+      "user_id": "USR-1367",
+      "pc1": -2.5618,
+      "pc2": 1.2172,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-2612",
+      "pc1": -1.9863,
+      "pc2": 2.1903,
+      "segment_id": 1
+    },
+    {
+      "user_id": "USR-4550",
+      "pc1": -1.9933,
+      "pc2": -0.1092,
+      "segment_id": 1
+    }
+  ]
+}

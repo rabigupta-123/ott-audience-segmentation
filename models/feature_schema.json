@@ -1,0 +1,30 @@
+{
+  "feature_names": [
+    "watch_time_hours",
+    "total_sessions",
+    "avg_session_mins",
+    "weekday_watch_ratio",
+    "recency_days",
+    "short_session_ratio",
+    "genre_diversity",
+    "genre_Action",
+    "genre_Comedy",
+    "genre_Drama",
+    "genre_Thriller",
+    "genre_Sci-Fi",
+    "genre_Romance",
+    "genre_Documentary",
+    "genre_Animation",
+    "genre_Horror"
+  ],
+  "num_features": 16,
+  "required_inputs": [
+    "watch_time_hours",
+    "total_sessions",
+    "avg_session_mins",
+    "weekday_watch_ratio",
+    "recency_days",
+    "short_session_ratio",
+    "top_genres"
+  ]
+}

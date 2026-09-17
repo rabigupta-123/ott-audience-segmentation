@@ -1,0 +1,105 @@
+{
+  "metrics": {
+    "clustering": {
+      "silhouette_score": 0.3222,
+      "inertia": 44761.54,
+      "n_clusters": 3
+    },
+    "cluster_balance": {
+      "min_cluster_size": 1151,
+      "max_cluster_size": 2546
+    },
+    "api": {
+      "health_check": true,
+      "valid_requests_passed": 4,
+      "invalid_requests_handled": 9,
+      "total_tests": 13,
+      "passed_tests": 13
+    },
+    "reproducibility": {
+      "random_seed": 42
+    },
+    "overall_status": "PASS",
+    "evaluated_at": "2026-09-17T13:45:03Z"
+  },
+  "test_cases": [
+    {
+      "name": "High Watch Time Action Viewer",
+      "category": "valid",
+      "passed": true,
+      "details": "Assigned Segment 2: High-Engagement Action Viewers"
+    },
+    {
+      "name": "Casual Short-Session Comedy Viewer",
+      "category": "valid",
+      "passed": true,
+      "details": "Assigned Segment 1: Casual Short-Session Comedy Viewers"
+    },
+    {
+      "name": "Genre Explorer",
+      "category": "valid",
+      "passed": true,
+      "details": "Assigned Segment 0: Genre Explorers & Variety Seekers"
+    },
+    {
+      "name": "Low Activity Viewer",
+      "category": "valid",
+      "passed": true,
+      "details": "Assigned Segment 1: Casual Short-Session Comedy Viewers"
+    },
+    {
+      "name": "Unknown Genre",
+      "category": "invalid",
+      "passed": true,
+      "details": "Received expected HTTP 200"
+    },
+    {
+      "name": "Empty top_genres list",
+      "category": "invalid",
+      "passed": true,
+      "details": "Received expected HTTP 200"
+    },
+    {
+      "name": "Zero Watch Time",
+      "category": "invalid",
+      "passed": true,
+      "details": "Received expected HTTP 200"
+    },
+    {
+      "name": "Extremely Large Watch Time",
+      "category": "invalid",
+      "passed": true,
+      "details": "Received expected HTTP 200"
+    },
+    {
+      "name": "Negative Watch Time",
+      "category": "invalid",
+      "passed": true,
+      "details": "Received expected HTTP 422"
+    },
+    {
+      "name": "Negative Session Duration",
+      "category": "invalid",
+      "passed": true,
+      "details": "Received expected HTTP 422"
+    },
+    {
+      "name": "Missing Required Field (avg_session_mins)",
+      "category": "invalid",
+      "passed": true,
+      "details": "Received expected HTTP 422"
+    },
+    {
+      "name": "String instead of Number",
+      "category": "invalid",
+      "passed": true,
+      "details": "Received expected HTTP 422"
+    },
+    {
+      "name": "Repeated Identical Requests",
+      "category": "invalid",
+      "passed": true,
+      "details": "Received expected HTTP 200"
+    }
+  ]
+}

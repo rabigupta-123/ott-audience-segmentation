@@ -1,0 +1,114 @@
+[
+  {
+    "k": 2,
+    "silhouette_score": 0.3161,
+    "inertia": 53545.06,
+    "bootstrap_mean_silhouette": 0.3168,
+    "bootstrap_std_silhouette": 0.0027,
+    "cluster_sizes": {
+      "1": 2578,
+      "0": 2422
+    },
+    "min_cluster_size": 2422,
+    "max_cluster_size": 2578
+  },
+  {
+    "k": 3,
+    "silhouette_score": 0.3222,
+    "inertia": 44761.54,
+    "bootstrap_mean_silhouette": 0.3229,
+    "bootstrap_std_silhouette": 0.0012,
+    "cluster_sizes": {
+      "1": 2546,
+      "2": 1303,
+      "0": 1151
+    },
+    "min_cluster_size": 1151,
+    "max_cluster_size": 2546
+  },
+  {
+    "k": 4,
+    "silhouette_score": 0.3082,
+    "inertia": 36952.06,
+    "bootstrap_mean_silhouette": 0.307,
+    "bootstrap_std_silhouette": 0.004,
+    "cluster_sizes": {
+      "2": 1520,
+      "1": 1303,
+      "3": 1142,
+      "0": 1035
+    },
+    "min_cluster_size": 1035,
+    "max_cluster_size": 1520
+  },
+  {
+    "k": 5,
+    "silhouette_score": 0.3143,
+    "inertia": 33824.58,
+    "bootstrap_mean_silhouette": 0.3044,
+    "bootstrap_std_silhouette": 0.0163,
+    "cluster_sizes": {
+      "0": 1513,
+      "1": 1251,
+      "2": 1035,
+      "3": 653,
+      "4": 548
+    },
+    "min_cluster_size": 548,
+    "max_cluster_size": 1513
+  },
+  {
+    "k": 6,
+    "silhouette_score": 0.2853,
+    "inertia": 31343.27,
+    "bootstrap_mean_silhouette": 0.2878,
+    "bootstrap_std_silhouette": 0.004,
+    "cluster_sizes": {
+      "1": 1251,
+      "2": 1013,
+      "0": 786,
+      "4": 751,
+      "5": 651,
+      "3": 548
+    },
+    "min_cluster_size": 548,
+    "max_cluster_size": 1251
+  },
+  {
+    "k": 7,
+    "silhouette_score": 0.2907,
+    "inertia": 29441.44,
+    "bootstrap_mean_silhouette": 0.2727,
+    "bootstrap_std_silhouette": 0.0239,
+    "cluster_sizes": {
+      "6": 1251,
+      "3": 765,
+      "2": 751,
+      "0": 651,
+      "4": 548,
+      "5": 527,
+      "1": 507
+    },
+    "min_cluster_size": 507,
+    "max_cluster_size": 1251
+  },
+  {
+    "k": 8,
+    "silhouette_score": 0.2882,
+    "inertia": 28294.7,
+    "bootstrap_mean_silhouette": 0.2915,
+    "bootstrap_std_silhouette": 0.0043,
+    "cluster_sizes": {
+      "3": 1251,
+      "0": 755,
+      "2": 648,
+      "4": 548,
+      "1": 539,
+      "6": 492,
+      "5": 437,
+      "7": 330
+    },
+    "min_cluster_size": 330,
+    "max_cluster_size": 1251
+  }
+]

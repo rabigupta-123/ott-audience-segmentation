@@ -1,0 +1,66 @@
+version: '3.8'
+
+services:
+  trainer:
+    build:
+      context: ./services/trainer
+      dockerfile: Dockerfile
+    container_name: audienceiq-trainer
+    volumes:
+      - ./data:/app/data
+      - shared-models:/app/models
+      - shared-results:/app/results
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  api:
+    build:
+      context: ./services/api
+      dockerfile: Dockerfile
+    container_name: audienceiq-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - shared-models:/app/models
+      - shared-trainer:/app/services/trainer
+    depends_on:
+      trainer:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 2s
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  evaluator:
+    build:
+      context: ./services/evaluator
+      dockerfile: Dockerfile
+    container_name: audienceiq-evaluator
+    environment:
+      - API_URL=http://api:8000
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - shared-results:/app/results
+      - shared-models:/app/models
+    depends_on:
+      api:
+        condition: service_healthy
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: audienceiq-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - api
+
+volumes:
+  shared-models:
+  shared-results:
+  shared-trainer:

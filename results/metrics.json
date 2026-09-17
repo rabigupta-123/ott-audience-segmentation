@@ -1,0 +1,23 @@
+{
+  "clustering": {
+    "silhouette_score": 0.3222,
+    "inertia": 44761.54,
+    "n_clusters": 3
+  },
+  "cluster_balance": {
+    "min_cluster_size": 1151,
+    "max_cluster_size": 2546
+  },
+  "api": {
+    "health_check": true,
+    "valid_requests_passed": 4,
+    "invalid_requests_handled": 9,
+    "total_tests": 13,
+    "passed_tests": 13
+  },
+  "reproducibility": {
+    "random_seed": 42
+  },
+  "overall_status": "PASS",
+  "evaluated_at": "2026-09-17T13:45:03Z"
+}
