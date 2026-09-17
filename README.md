@@ -11,6 +11,12 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
+<br />
+
+<img src="docs/images/hero_banner.jpg" alt="AudienceIQ Hero Banner" width="100%" style="border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
+
+<br />
+
 *An end-to-end, production-grade ML platform transforming raw viewer telemetry into actionable behavioral audience cohorts and serving real-time, explainable recommendations via REST API and a crisp, modern SaaS Web Dashboard.*
 
 [Key Features](#-key-features) • [System Architecture](#-system-architecture) • [Mathematical Foundations](#-canonical-mathematical-spec) • [Quick Start](#-quick-start) • [API Specification](#-rest-api-specification) • [Evaluation Suite](#-automated-evaluator--quality-benchmarks)
