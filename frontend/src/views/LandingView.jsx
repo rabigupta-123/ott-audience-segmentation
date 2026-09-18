@@ -91,9 +91,9 @@ export default function LandingView({ setActiveTab, metricsData, segmentProfiles
     >
       {/* Hero Section */}
       <motion.div variants={itemVariants} className="relative text-center space-y-6 max-w-4xl mx-auto pt-6">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-semibold shadow-sm">
-          <Sparkles className="w-4 h-4 text-indigo-600" />
-          <span>UI/UX Pro Max Engine • Containerized AI Personalization</span>
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-100 border border-indigo-300 text-indigo-800 text-xs font-bold shadow-sm">
+          <Sparkles className="w-4 h-4 text-indigo-700" />
+          <span>AI OTT Audience Intelligence Platform</span>
         </div>
 
         <h1 className="font-display font-extrabold text-4xl sm:text-6xl text-slate-900 tracking-tight leading-none">
@@ -207,18 +207,16 @@ export default function LandingView({ setActiveTab, metricsData, segmentProfiles
         </div>
       </div>
 
-      {/* Bottom Conversion Banner Card */}
-      <motion.div variants={itemVariants} className="p-8 sm:p-10 rounded-3xl floating-card bg-gradient-to-r from-indigo-900 via-indigo-800 to-slate-900 text-white space-y-6 relative overflow-hidden shadow-2xl">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-indigo-500/20 to-cyan-500/20 rounded-full blur-3xl pointer-events-none" />
-
+      {/* Bottom Conversion Banner Card - High Contrast White Theme */}
+      <motion.div variants={itemVariants} className="p-8 sm:p-10 rounded-3xl floating-card bg-white border border-slate-200 text-slate-900 space-y-6 relative overflow-hidden shadow-xl">
         <div className="max-w-2xl space-y-3 relative z-10">
-          <span className="px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-xs font-mono font-bold border border-indigo-500/30">
-            Hackathon & Production Ready
+          <span className="px-3.5 py-1 rounded-full bg-indigo-100 text-indigo-800 font-mono text-xs font-bold border border-indigo-300">
+            Production-Ready Microservices Architecture
           </span>
-          <h2 className="font-display text-3xl font-extrabold tracking-tight">
+          <h2 className="font-display text-3xl font-extrabold text-slate-900 tracking-tight">
             Ready to Explore Real-Time OTT Personalization?
           </h2>
-          <p className="text-slate-300 text-sm leading-relaxed">
+          <p className="text-slate-700 font-medium text-sm leading-relaxed">
             Run instant interactive telemetry simulations, view 2D PCA user projections, or inspect official Model Card benchmarks.
           </p>
         </div>
@@ -226,16 +224,16 @@ export default function LandingView({ setActiveTab, metricsData, segmentProfiles
         <div className="flex flex-wrap items-center gap-4 relative z-10 pt-2">
           <button
             onClick={() => setActiveTab('dashboard')}
-            className="flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-slate-900 font-display font-bold text-xs hover:bg-slate-100 transition-all shadow-lg"
+            className="flex items-center gap-2 px-6 py-3.5 rounded-xl bg-indigo-600 text-white font-display font-bold text-xs hover:bg-indigo-700 transition-all shadow-md"
           >
             <span>Open Dashboard</span>
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRight className="w-4 h-4 text-white" />
           </button>
           <button
             onClick={() => setActiveTab('analyzer')}
-            className="flex items-center gap-2 px-6 py-3 rounded-xl bg-indigo-700/60 border border-indigo-500/40 text-white font-display font-bold text-xs hover:bg-indigo-700 transition-all"
+            className="flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-100 border border-slate-300 text-slate-800 font-display font-bold text-xs hover:bg-slate-200 transition-all"
           >
-            <Sliders className="w-4 h-4 text-cyan-400" />
+            <Sliders className="w-4 h-4 text-indigo-600" />
             <span>Launch What-If Simulator</span>
           </button>
         </div>
