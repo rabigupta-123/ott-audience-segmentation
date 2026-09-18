@@ -8,11 +8,13 @@ import {
   BarChart3, 
   Activity, 
   Layers,
-  Search
+  Search,
+  Sparkles
 } from 'lucide-react';
 
 export default function Header({ activeTab, setActiveTab, apiHealth, onOpenCommandPalette }) {
   const navItems = [
+    { id: 'landing', label: 'Overview', icon: Sparkles },
     { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
     { id: 'segments', label: 'Audience Segments', icon: Users },
     { id: 'analyzer', label: 'User Analyzer', icon: UserCheck },
@@ -25,7 +27,7 @@ export default function Header({ activeTab, setActiveTab, apiHealth, onOpenComma
     <header className="sticky top-4 z-50 px-4 sm:px-8 max-w-7xl mx-auto w-full mb-6">
       <div className="floating-nav rounded-2xl p-2.5 px-4 flex items-center justify-between gap-4">
         {/* Logo & Title */}
-        <div className="flex items-center gap-3 shrink-0 cursor-pointer" onClick={() => setActiveTab('dashboard')}>
+        <div className="flex items-center gap-3 shrink-0 cursor-pointer" onClick={() => setActiveTab('landing')}>
           <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-cyan-400 flex items-center justify-center shadow-lg shadow-indigo-600/30">
             <PlayCircle className="w-5 h-5 text-white" />
           </div>

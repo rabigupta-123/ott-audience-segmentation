@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import CommandPalette from './components/CommandPalette';
+import LandingView from './views/LandingView';
 import DashboardView from './views/DashboardView';
 import SegmentsView from './views/SegmentsView';
 import AnalyzerView from './views/AnalyzerView';
@@ -9,7 +10,7 @@ import HealthView from './views/HealthView';
 import ArchitectureView from './views/ArchitectureView';
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState('dashboard');
+  const [activeTab, setActiveTab] = useState('landing');
   const [apiHealth, setApiHealth] = useState(null);
   const [metricsData, setMetricsData] = useState(null);
   const [segmentProfiles, setSegmentProfiles] = useState([]);
@@ -93,6 +94,14 @@ export default function App() {
 
       {/* Main Floating Content Viewport */}
       <main className="flex-1 px-4 sm:px-8 pb-12 max-w-7xl mx-auto w-full">
+        {activeTab === 'landing' && (
+          <LandingView 
+            setActiveTab={setActiveTab} 
+            metricsData={metricsData} 
+            segmentProfiles={segmentProfiles} 
+          />
+        )}
+
         {activeTab === 'dashboard' && (
           <DashboardView 
             metricsData={metricsData} 
