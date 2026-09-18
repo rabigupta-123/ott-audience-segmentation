@@ -139,29 +139,84 @@ export default function LandingView({ setActiveTab, metricsData, segmentProfiles
       animate="visible"
       className="space-y-12 py-4 relative overflow-hidden"
     >
-      {/* Dynamic Animated Ambient Background Blobs */}
-      <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[800px] h-[400px] pointer-events-none -z-10 overflow-hidden">
-        <motion.div 
-          animate={{
-            scale: [1, 1.15, 1],
-            rotate: [0, 90, 0],
-            x: [-20, 20, -20],
-            y: [-10, 10, -10]
-          }}
-          transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-0 left-10 w-96 h-96 bg-gradient-to-tr from-indigo-500/15 via-cyan-400/15 to-purple-500/10 rounded-full blur-3xl"
-        />
+      {/* Dynamic Cinema Ambient Background with Floating Movie Cards */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[600px] pointer-events-none -z-10 overflow-hidden">
+        {/* Glowing Ambient Light Orbs */}
         <motion.div 
           animate={{
             scale: [1, 1.2, 1],
-            rotate: [0, -90, 0],
-            x: [20, -20, 20],
-            y: [10, -10, 10]
+            rotate: [0, 90, 0],
+            opacity: [0.3, 0.5, 0.3]
           }}
-          transition={{ duration: 22, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute bottom-0 right-10 w-96 h-96 bg-gradient-to-br from-cyan-500/15 via-indigo-400/15 to-rose-400/10 rounded-full blur-3xl"
+          transition={{ duration: 16, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute top-0 left-1/4 w-[450px] h-[450px] bg-gradient-to-tr from-indigo-500/20 via-purple-500/15 to-cyan-400/10 rounded-full blur-3xl"
         />
+        <motion.div 
+          animate={{
+            scale: [1, 1.25, 1],
+            rotate: [0, -90, 0],
+            opacity: [0.25, 0.45, 0.25]
+          }}
+          transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute top-20 right-1/4 w-[420px] h-[420px] bg-gradient-to-br from-cyan-500/20 via-blue-500/15 to-indigo-400/10 rounded-full blur-3xl"
+        />
+
+        {/* Ambient Floating Movie Poster Cards (Floating in Parallax Space) */}
+        <motion.div 
+          animate={{ y: [-10, 12, -10], rotate: [-2, 2, -2] }}
+          transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+          className="hidden xl:flex absolute top-12 left-2 p-3.5 rounded-2xl bg-white/80 backdrop-blur-md border border-slate-200/90 shadow-xl space-y-1.5 w-52 z-0"
+        >
+          <div className="flex items-center justify-between">
+            <span className="px-2 py-0.5 rounded bg-indigo-100 text-indigo-800 text-[10px] font-bold font-mono">2026 BLOCKBUSTER</span>
+            <span className="text-amber-500 font-bold text-xs">★ 9.6</span>
+          </div>
+          <div className="font-display font-extrabold text-xs text-slate-900">Cyberpunk 2099: Neon</div>
+          <div className="text-[10px] text-slate-500 font-mono">Sci-Fi • Action • 98% Match</div>
+        </motion.div>
+
+        <motion.div 
+          animate={{ y: [12, -10, 12], rotate: [2, -2, 2] }}
+          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+          className="hidden xl:flex absolute top-16 right-2 p-3.5 rounded-2xl bg-white/80 backdrop-blur-md border border-slate-200/90 shadow-xl space-y-1.5 w-56 z-0"
+        >
+          <div className="flex items-center justify-between">
+            <span className="px-2 py-0.5 rounded bg-purple-100 text-purple-800 text-[10px] font-bold font-mono">MUST WATCH 2026</span>
+            <span className="text-amber-500 font-bold text-xs">★ 9.8</span>
+          </div>
+          <div className="font-display font-extrabold text-xs text-slate-900">Dune: Arrakis Rising</div>
+          <div className="text-[10px] text-slate-500 font-mono">Sci-Fi • Drama • 99% Match</div>
+        </motion.div>
+
+        <motion.div 
+          animate={{ y: [-8, 10, -8], x: [-5, 5, -5] }}
+          transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
+          className="hidden xl:flex absolute bottom-24 left-6 p-3 rounded-2xl bg-white/80 backdrop-blur-md border border-slate-200/90 shadow-lg items-center gap-3 w-52 z-0"
+        >
+          <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 text-white flex items-center justify-center font-bold text-xs shrink-0">
+            <Film className="w-4 h-4" />
+          </div>
+          <div>
+            <div className="font-display font-bold text-xs text-slate-900">Shadow Protocol</div>
+            <div className="text-[10px] text-slate-500 font-mono">Action • 2026 Release</div>
+          </div>
+        </motion.div>
+
+        <motion.div 
+          animate={{ y: [10, -8, 10], x: [5, -5, 5] }}
+          transition={{ duration: 8.5, repeat: Infinity, ease: "easeInOut" }}
+          className="hidden xl:flex absolute bottom-28 right-6 p-3 rounded-2xl bg-white/80 backdrop-blur-md border border-slate-200/90 shadow-lg items-center gap-3 w-56 z-0"
+        >
+          <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-600 text-white flex items-center justify-center font-bold text-xs shrink-0">
+            <Film className="w-4 h-4" />
+          </div>
+          <div>
+            <div className="font-display font-bold text-xs text-slate-900">Planet Earth III</div>
+            <div className="text-[10px] text-slate-500 font-mono">Documentary • 97% Match</div>
+          </div>
+        </motion.div>
       </div>
+
 
       {/* Hero Section */}
       <motion.div variants={itemVariants} className="relative text-center space-y-6 max-w-4xl mx-auto pt-4">
