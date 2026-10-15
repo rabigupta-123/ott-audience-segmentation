@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Activity, CheckCircle2, RefreshCw, Cpu, Server, HardDrive, Terminal } from 'lucide-react';
 
-export default function HealthView({ apiHealth, apiBaseUrl = 'http://localhost:8000' }) {
+export default function HealthView({ apiHealth, apiBaseUrl = import.meta.env.VITE_API_BASE_URL || '/api' }) {
   const [liveHealth, setLiveHealth] = useState(apiHealth);
   const [pingLatency, setPingLatency] = useState(null);
   const [checking, setChecking] = useState(false);
@@ -15,7 +15,7 @@ export default function HealthView({ apiHealth, apiBaseUrl = 'http://localhost:8
       try {
         resp = await fetch(`${apiBaseUrl}/health`);
       } catch (err) {
-        resp = await fetch('/api/health');
+        resp = await fetch('http://localhost:8000/health');
       }
       const duration = Math.round(performance.now() - start);
       setPingLatency(duration);

@@ -15,10 +15,14 @@ from schemas import (
     RecommendResponse, 
     HealthResponse, 
     ErrorResponse,
-    RecommendationItem
+    RecommendationItem,
+    ChurnPredictRequest,
+    ChurnPredictResponse,
+    ChurnAnalyticsResponse
 )
 from model_loader import model_container
 from recommender import generate_recommendations
+from churn_predictor import churn_engine
 
 app = FastAPI(
     title="AudienceIQ REST API",
@@ -115,9 +119,13 @@ def post_recommend(payload: RecommendRequest):
         input_dict = payload.model_dump()
         cluster_id, segment_info, dist, sec_id, sec_name, boundary_note = model_container.predict(input_dict)
         
-        # Generate recommendations using local content catalog
-        recs_data = generate_recommendations(segment_info, payload.top_genres)
+        # Generate recommendations using local content catalog with requested limit (default 12)
+        limit = payload.limit if payload.limit is not None else 12
+        recs_data = generate_recommendations(segment_info, payload.top_genres, limit=limit)
         recommendations = [RecommendationItem(**item) for item in recs_data]
+
+        # Compute integrated churn risk intelligence
+        churn_info = churn_engine.calculate_churn_risk(input_dict, segment_id=cluster_id)
 
         return RecommendResponse(
             user_id=payload.user_id or "USR-8192",
@@ -129,7 +137,8 @@ def post_recommend(payload: RecommendRequest):
             recommendation_strategy=segment_info.get("recommendation_strategy", "General audience recommendation."),
             secondary_segment_id=sec_id,
             secondary_segment_name=sec_name,
-            boundary_confidence_note=boundary_note
+            boundary_confidence_note=boundary_note,
+            churn_risk=churn_info
         )
     except ValueError as ve:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(ve))
@@ -138,6 +147,59 @@ def post_recommend(payload: RecommendRequest):
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, 
             detail="An error occurred during recommendation prediction."
+        )
+
+@app.post("/churn/predict", response_model=ChurnPredictResponse)
+def post_churn_predict(payload: ChurnPredictRequest):
+    try:
+        input_dict = payload.model_dump()
+        seg_id = payload.segment_id
+        seg_name = None
+
+        # If segment_id is not supplied, infer it from model if loaded
+        if seg_id is None and model_container.is_loaded:
+            try:
+                inferred_id, info, _, _, _, _ = model_container.predict(input_dict)
+                seg_id = inferred_id
+                seg_name = info.get("segment_name")
+            except Exception:
+                pass
+        elif seg_id is not None and model_container.is_loaded:
+            info = next((s for s in model_container.segment_metadata if s.get("segment_id") == seg_id), None)
+            if info:
+                seg_name = info.get("segment_name")
+
+        churn_res = churn_engine.calculate_churn_risk(input_dict, segment_id=seg_id)
+        return ChurnPredictResponse(
+            user_id=payload.user_id or "USR-8192",
+            churn_risk_score=churn_res["churn_risk_score"],
+            churn_risk_percentage=churn_res["churn_risk_percentage"],
+            risk_level=churn_res["risk_level"],
+            primary_driver=churn_res["primary_driver"],
+            risk_factors=churn_res["risk_factors"],
+            retention_playbook=churn_res["retention_playbook"],
+            segment_id=seg_id,
+            segment_name=seg_name
+        )
+    except ValueError as ve:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(ve))
+    except Exception as e:
+        print(f"[API ERROR] Churn prediction error: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="An error occurred during churn prediction."
+        )
+
+@app.get("/churn/analytics", response_model=ChurnAnalyticsResponse)
+def get_churn_analytics():
+    try:
+        data = churn_engine.compute_cohort_analytics()
+        return data
+    except Exception as e:
+        print(f"[API ERROR] Churn analytics error: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="An error occurred while compiling platform churn analytics."
         )
 
 # Exception handlers preventing stack trace leakage

@@ -5,9 +5,15 @@ import joblib
 import numpy as np
 
 # Ensure sys.path includes trainer directory so joblib can unpickle custom OTTFeatureEngineer
-trainer_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "trainer"))
-if os.path.exists(trainer_dir) and trainer_dir not in sys.path:
-    sys.path.insert(0, trainer_dir)
+for candidate_dir in [
+    os.path.dirname(os.path.abspath(__file__)),
+    os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "trainer")),
+    "/app/services/trainer",
+    "/app",
+    os.path.abspath(os.path.join(os.path.dirname(__file__), "services", "trainer")),
+]:
+    if os.path.exists(candidate_dir) and candidate_dir not in sys.path:
+        sys.path.insert(0, candidate_dir)
 
 class ModelContainer:
     def __init__(self):

@@ -20,7 +20,8 @@ import {
   RefreshCw,
   TrendingUp,
   Terminal,
-  Play
+  Play,
+  BookOpen
 } from 'lucide-react';
 
 export default function LandingView({ setActiveTab, metricsData, segmentProfiles }) {
@@ -236,20 +237,27 @@ export default function LandingView({ setActiveTab, metricsData, segmentProfiles
           AudienceIQ processes raw viewer activity into 3 distinct behavioral segments, calculates Euclidean centroid distances, detects hybrid boundary users, and serves sub-10ms REST API recommendations.
         </p>
 
-        <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
+        <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
           <button
             onClick={() => setActiveTab('dashboard')}
-            className="flex items-center gap-2.5 px-7 py-3.5 rounded-2xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-cyan-600 text-white font-display font-semibold text-sm shadow-xl shadow-indigo-600/25 hover:opacity-95 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
+            className="flex items-center gap-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-cyan-600 text-white font-display font-semibold text-xs sm:text-sm shadow-xl shadow-indigo-600/25 hover:opacity-95 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
           >
-            <span>Launch Platform Dashboard</span>
-            <ArrowRight className="w-4.5 h-4.5" />
+            <span>Platform Dashboard</span>
+            <ArrowRight className="w-4 h-4" />
           </button>
           <button
             onClick={() => setActiveTab('analyzer')}
-            className="flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-white/90 backdrop-blur-md border border-slate-300/80 text-slate-800 font-display font-semibold text-sm hover:border-indigo-400 hover:text-indigo-600 shadow-sm hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
+            className="flex items-center gap-2 px-5 py-3 rounded-2xl bg-white/90 backdrop-blur-md border border-slate-300/80 text-slate-800 font-display font-semibold text-xs sm:text-sm hover:border-indigo-400 hover:text-indigo-600 shadow-xs hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
           >
-            <Sliders className="w-4.5 h-4.5 text-indigo-600" />
-            <span>Try Interactive Simulator</span>
+            <Sliders className="w-4 h-4 text-indigo-600" />
+            <span>Interactive Simulator</span>
+          </button>
+          <button
+            onClick={() => setActiveTab('about')}
+            className="flex items-center gap-2 px-5 py-3 rounded-2xl bg-indigo-50/80 backdrop-blur-md border border-indigo-200 text-indigo-900 font-display font-semibold text-xs sm:text-sm hover:bg-indigo-100 shadow-xs hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
+          >
+            <BookOpen className="w-4 h-4 text-indigo-700" />
+            <span>Dataset & Rating Formula</span>
           </button>
         </div>
       </motion.div>

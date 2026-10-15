@@ -48,16 +48,24 @@ Designed for high reliability, mathematical rigor, and instant demo readiness:
 
 ### ⚡ REST API Service (`services/api`)
 - **Sub-10ms Inference**: High-performance FastAPI endpoint serving `POST /recommend` using persisted `audience_pipeline.joblib`.
+- **Integrated Churn Intelligence**: Computes real-time viewer churn probabilities and triggers targeted re-engagement campaigns in `POST /churn/predict` and `POST /recommend`.
+- **Platform-Wide Attrition Analytics**: Slices 5,000 viewer streams into low, medium, and high risk tiers in `GET /churn/analytics`.
 - **Explainable Match Reasons**: Every title returned carries a human-readable `match_reason` explaining why it fits the viewer's behavioral segment.
 - **15% Centroid Gap Rule**: Identifies boundary users when $\frac{d_2 - d_1}{d_1} \le 0.15$, returning secondary cohort attributions and confidence notes.
 - **Strict Pydantic V2 Validation**: Prevents invalid telemetry types, negative durations, or missing fields with `HTTP 422` handlers.
 
+### 🛡️ Audience Churn & Retention Engine (`services/api/churn_predictor.py`)
+- **Multi-Factor Probabilistic Risk Scoring**: Combines Logistic Recency Decay, Session Fragility, Watch Time Velocity Deficit, and Cohort Sensitivity into an actionable 0-100% risk score.
+- **Automated Retention Playbooks**: Automatically generates campaign IDs, objectives, targeted channels (Push, In-App Hero, Email Digest), and projected retention lift percentages.
+- **Cohort ARR Protection Matrix**: Calculates monthly at-risk subscriber revenue and projects retained annual recurring revenue ($69,650/yr ARR saved).
+
 ### 🖥️ Modern SaaS Web Dashboard (`frontend`)
+- **Retention & Churn Studio View**: Dedicated command center featuring platform risk KPIs, interactive live telemetry sliders, animated churn risk gauges, cohort breakdown bars, and dispatchable retention campaigns.
 - **Dashboard Bento View**: Highlights total telemetry records (5,000), discovered cohorts, silhouette score, and viewer distribution pie & bar charts.
 - **Audience Segments & 2D PCA View**: Interactive Recharts 2D PCA scatter plot (500 sampled user vectors) and Behavioral DNA Radar Chart.
-- **User Analyzer & Live Simulator**: Interactive sliders for watch time, session duration, and short-session ratio with debounced (~450ms) auto-execution and `AbortController` request cancellation.
-- **Official Model Card & Benchmark Matrix**: Displays dataset lineage, feature schema, preprocessing assumptions, bootstrap curves, and 13/13 edge-case test results.
-- **Command Palette (`⌘K` / `Ctrl+K`)**: Keyboard shortcut modal for navigating views and loading demo user profiles.
+- **User Analyzer & Live Simulator**: Interactive sliders for watch time, session duration, and short-session ratio with debounced (~450ms) auto-execution, `AbortController` cancellation, and real-time Churn Risk indicator badges.
+- **Official Model Card & Benchmark Matrix**: Displays dataset lineage, feature schema, preprocessing assumptions, bootstrap curves, and 15/15 unit & integration test results.
+- **Command Palette (`⌘K` / `Ctrl+K`)**: Keyboard shortcut modal for navigating views, launching churn simulations, and loading demo user profiles.
 
 ---
 
@@ -201,7 +209,8 @@ curl -X POST "http://localhost:8000/recommend" \
     "top_genres": ["Action", "Comedy"],
     "weekday_watch_ratio": 0.5,
     "recency_days": 4.0,
-    "short_session_ratio": 0.35
+    "short_session_ratio": 0.35,
+    "limit": 10
   }'
 ```
 
@@ -218,16 +227,136 @@ curl -X POST "http://localhost:8000/recommend" \
   "boundary_confidence_note": "User exhibits hybrid characteristics between 'Genre Explorers & Variety Seekers' and 'Casual Short-Session Comedy Viewers' (Centroid Gap: 8.2%)",
   "recommendations": [
     {
-      "title": "Cyberpunk 2099: Cyber City",
-      "genres": ["Sci-Fi", "Action"],
-      "duration_mins": 142,
+      "title": "Toy Story",
+      "year": 1995,
+      "genres": ["Adventure", "Animation", "Children", "Comedy", "Fantasy"],
+      "duration_mins": 88,
       "content_type": "Movie",
-      "match_reason": "Matches preferred genre: Action | Multi-genre crossover title for variety seekers"
+      "rating": 3.92,
+      "rating_count": 215,
+      "weighted_rating": 3.83,
+      "score": 0.8124,
+      "match_percentage": 94,
+      "reasons": ["Matches Comedy", "Highly rated (WR 3.8)", "Multi-genre crossover"],
+      "match_reason": "Matches Comedy | Highly rated (WR 3.8) | Multi-genre crossover",
+      "source": "MovieLens ml-latest-small"
     }
   ],
-  "recommendation_strategy": "Offer curated multi-genre discovery carousels and genre crossover recommendations."
+  "recommendation_strategy": "Offer curated multi-genre discovery carousels and genre crossover recommendations.",
+  "churn_risk": {
+    "churn_risk_score": 0.284,
+    "churn_risk_percentage": 28.4,
+    "risk_level": "LOW",
+    "primary_driver": "Active or recent engagement (2.0 days elapsed)",
+    "retention_playbook": {
+      "campaign_id": "CMP-VIP-LOYALTY",
+      "campaign_title": "VIP Superfan Loyalty Showcase"
+    }
+  }
 }
 ```
+
+### 3. Predict Viewer Churn Risk & Retention Playbook
+`POST /churn/predict`
+
+**Request Payload:**
+```json
+{
+  "user_id": "USR-AT-RISK-42",
+  "watch_time_hours": 3.5,
+  "total_sessions": 2,
+  "avg_session_mins": 14.0,
+  "weekday_watch_ratio": 0.8,
+  "recency_days": 24.0,
+  "short_session_ratio": 0.85,
+  "top_genres": ["Comedy"]
+}
+```
+
+**Response Payload:**
+```json
+{
+  "user_id": "USR-AT-RISK-42",
+  "churn_risk_score": 0.784,
+  "churn_risk_percentage": 78.4,
+  "risk_level": "HIGH",
+  "primary_driver": "Recency & Inactivity (24.0 days elapsed since last session. Severe inactivity window.)",
+  "risk_factors": [
+    {
+      "name": "Recency & Inactivity",
+      "score": 0.896,
+      "severity": "high",
+      "description": "24.0 days elapsed since last session. Severe inactivity window."
+    },
+    {
+      "name": "Session Fragility",
+      "score": 0.770,
+      "severity": "high",
+      "description": "85% sessions truncated under 20 mins; avg session 14.0m."
+    },
+    {
+      "name": "Consumption Volume Deficit",
+      "score": 0.612,
+      "severity": "medium",
+      "description": "Cumulative watch time of 3.5 hrs across 2 sessions."
+    },
+    {
+      "name": "Catalog Variety Breadth",
+      "score": 0.750,
+      "severity": "high",
+      "description": "1 preferred genre tracked. Narrow interest profile."
+    }
+  ],
+  "retention_playbook": {
+    "campaign_id": "CMP-DORM-WINBACK",
+    "campaign_title": "48-Hour Critical Win-Back Trigger",
+    "objective": "Re-ignite inactive subscriber before 30-day billing cycle lapse",
+    "primary_channel": "High-Priority Push Notification + Personalized Email",
+    "recommended_action": "Trigger automated 'We picked this for you' drop spotlighting newly premiered Comedy blockbusters with direct-to-play deep link.",
+    "incentive_offer": "Exclusive 7-Day 4K HDR Pass & Zero-Ad Weekend Streaming Token",
+    "projected_retention_lift": "+38.4% 14-day subscriber retention probability"
+  },
+  "segment_id": 1,
+  "segment_name": "Casual Short-Session Comedy Viewers"
+}
+```
+
+### 4. Platform-Wide Churn & Cohort Vulnerability Analytics
+`GET /churn/analytics`
+
+Returns platform-wide attrition distributions across all 5,000 viewer activity streams:
+- `overall_avg_churn_risk`: `36.4%`
+- `risk_distribution`: counts and percentages for `low_risk`, `medium_risk`, `high_risk`
+- `cohort_breakdowns`: breakdown per K-Means cluster (0, 1, 2) with average risk and risk distributions
+- `revenue_impact`: monthly at-risk subscriber revenue and projected annual recurring revenue saved ($69,650/yr)
+
+---
+
+## 📚 Real Dataset Attribution & Transparent Bayesian Ranking
+
+### MovieLens Dataset Provenance & Attribution
+All content catalog ratings and counts are sourced from the **GroupLens MovieLens ml-latest-small** research dataset (University of Minnesota):
+- **Source**: F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens Datasets: History and Context. *ACM Transactions on Interactive Intelligent Systems (TiiS)* 5, 4.
+- **License**: Strictly non-commercial research and educational use. Zero runtime third-party API dependencies.
+- **Titles**: 598 catalog titles, 596 rated titles across 9 standard OTT genres (`Action`, `Comedy`, `Drama`, `Thriller`, `Sci-Fi`, `Romance`, `Documentary`, `Animation`, `Horror`).
+- **Unrated Titles**: Explicitly display `"Not rated"` with no artificial default numbers.
+
+### Bayesian Weighted Rating (WR)
+```
+WR = (v / (v + m)) * R + (m / (v + m)) * C
+```
+- **$R$**: Title's empirical mean rating.
+- **$v$**: Title's user rating count.
+- **$C = 3.64$**: Catalog-wide baseline mean rating.
+- **$m = 105.0$**: Minimum-votes threshold (80th percentile of catalog rating counts).
+
+### Candidate Scoring Formula & Transparent Weights
+```
+Score = (w_genre * genre_match) + (w_rating * normalized(WR)) + (w_segment * segment_fit)
+```
+- **$w_{genre} = 0.45$ (45%)**: Jaccard-style overlap of user top genres with title genres.
+- **$w_{rating} = 0.30$ (30%)**: Normalized Bayesian WR in range $[0.0, 1.0]$.
+- **$w_{segment} = 0.25$ (25%)**: Session length fit (e.g. short sessions favor duration $\le 45$m) and dominant cohort genres.
 
 ---
 

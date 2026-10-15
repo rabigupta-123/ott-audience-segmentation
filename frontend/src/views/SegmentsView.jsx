@@ -24,10 +24,17 @@ export default function SegmentsView({ segmentProfiles, projectionsData }) {
 
   const COLORS = ['#6366F1', '#06B6D4', '#10B981'];
 
-  // Format Radar data from real segment DNA profiles
-  const radarFeatures = ["watch_time_hours", "avg_session_mins", "total_sessions", "short_session_ratio", "recency_days", "genre_diversity"];
-  const radarData = radarFeatures.map(feat => {
-    const row = { feature: feat.replace('_', ' ') };
+  // Format Radar data from real segment DNA profiles with clean display names
+  const radarFeatureMap = {
+    watch_time_hours: "Watch Time",
+    avg_session_mins: "Avg Session",
+    total_sessions: "Total Sessions",
+    short_session_ratio: "Short Sessions",
+    recency_days: "Recency",
+    genre_diversity: "Genre Diversity"
+  };
+  const radarData = Object.keys(radarFeatureMap).map(feat => {
+    const row = { feature: radarFeatureMap[feat] };
     profiles.forEach(p => {
       row[p.segment_name] = p.dna_profile?.[feat] || 50;
     });
@@ -184,10 +191,10 @@ export default function SegmentsView({ segmentProfiles, projectionsData }) {
           </h3>
           <div className="h-72">
             <ResponsiveContainer width="100%" height="100%">
-              <RadarChart cx="50%" cy="50%" outerRadius="80%" data={radarData}>
+              <RadarChart cx="50%" cy="50%" outerRadius="62%" data={radarData}>
                 <PolarGrid stroke="#E2E8F0" />
-                <PolarAngleAxis dataKey="feature" stroke="#475569" fontSize={10} />
-                <PolarRadiusAxis angle={30} domain={[0, 100]} stroke="#94A3B8" fontSize={9} />
+                <PolarAngleAxis dataKey="feature" stroke="#475569" fontSize={11} tick={{ fill: '#334155', fontWeight: 600 }} />
+                <PolarRadiusAxis angle={90} domain={[0, 100]} stroke="#CBD5E1" tick={false} axisLine={false} />
                 {profiles.map((p, idx) => (
                   <Radar
                     key={p.segment_id}
@@ -198,9 +205,19 @@ export default function SegmentsView({ segmentProfiles, projectionsData }) {
                     fillOpacity={0.25}
                   />
                 ))}
-                <Legend />
+                <Tooltip contentStyle={{ backgroundColor: '#FFFFFF', borderColor: '#E2E8F0', borderRadius: '1rem', color: '#0F172A', boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1)' }} />
               </RadarChart>
             </ResponsiveContainer>
+          </div>
+
+          {/* Clean Non-Overlapping Segment Legend Strip */}
+          <div className="flex flex-wrap items-center justify-center gap-3 pt-3 border-t border-slate-100">
+            {profiles.map((p, idx) => (
+              <div key={p.segment_id} className="flex items-center gap-1.5 text-xs text-slate-700 font-medium">
+                <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: COLORS[idx % COLORS.length] }} />
+                <span>{p.segment_name}</span>
+              </div>
+            ))}
           </div>
         </div>
 

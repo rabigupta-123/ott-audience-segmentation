@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, LayoutDashboard, Users, UserCheck, BarChart3, Activity, Layers, Sparkles, X } from 'lucide-react';
+import { Search, LayoutDashboard, Users, UserCheck, BarChart3, Activity, Layers, Sparkles, X, BookOpen, ShieldAlert } from 'lucide-react';
 
 export default function CommandPalette({ isOpen, onClose, setActiveTab, onSelectDemo }) {
   const [query, setQuery] = useState('');
@@ -25,9 +25,11 @@ export default function CommandPalette({ isOpen, onClose, setActiveTab, onSelect
     { label: 'Go to Dashboard', tab: 'dashboard', icon: LayoutDashboard, category: 'Navigation' },
     { label: 'Go to Audience Segments & PCA', tab: 'segments', icon: Users, category: 'Navigation' },
     { label: 'Go to User Analyzer & Simulator', tab: 'analyzer', icon: UserCheck, category: 'Navigation' },
+    { label: 'Go to Churn & Retention Intelligence', tab: 'retention', icon: ShieldAlert, category: 'Navigation' },
     { label: 'Go to Model Evaluation & Model Card', tab: 'evaluation', icon: BarChart3, category: 'Navigation' },
     { label: 'Go to System Health', tab: 'health', icon: Activity, category: 'Navigation' },
     { label: 'Go to System Architecture', tab: 'architecture', icon: Layers, category: 'Navigation' },
+    { label: 'Go to About & Dataset Attribution', tab: 'about', icon: BookOpen, category: 'Navigation' },
     { label: 'Demo Profile: Binge Action Viewer', demoIdx: 0, icon: Sparkles, category: 'Demo Profiles' },
     { label: 'Demo Profile: Casual Comedy Viewer', demoIdx: 1, icon: Sparkles, category: 'Demo Profiles' },
     { label: 'Demo Profile: Genre Explorer', demoIdx: 2, icon: Sparkles, category: 'Demo Profiles' },

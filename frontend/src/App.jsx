@@ -8,6 +8,8 @@ import AnalyzerView from './views/AnalyzerView';
 import EvaluationView from './views/EvaluationView';
 import HealthView from './views/HealthView';
 import ArchitectureView from './views/ArchitectureView';
+import AboutView from './views/AboutView';
+import RetentionView from './views/RetentionView';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('landing');
@@ -19,52 +21,40 @@ export default function App() {
   const [commandPaletteOpen, setCommandPaletteOpen] = useState(false);
   const [selectedDemoIdx, setSelectedDemoIdx] = useState(null);
 
-  const API_BASE_URL = 'http://localhost:8000';
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '/api';
 
   useEffect(() => {
-    const fetchRealBackendData = async () => {
-      // 1. Fetch /health
+    const fetchWithFallback = async (endpoint) => {
       try {
-        const resp = await fetch(`${API_BASE_URL}/health`);
-        if (resp.ok) setApiHealth(await resp.json());
-      } catch (err) {
-        console.log('Health fetch info:', err);
-      }
-
-      // 2. Fetch /metrics
-      try {
-        const resp = await fetch(`${API_BASE_URL}/metrics`);
-        if (resp.ok) setMetricsData(await resp.json());
-      } catch (err) {
-        console.log('Metrics fetch info:', err);
-      }
-
-      // 3. Fetch /segments
-      try {
-        const resp = await fetch(`${API_BASE_URL}/segments`);
-        if (resp.ok) setSegmentProfiles(await resp.json());
-      } catch (err) {
-        console.log('Segments fetch info:', err);
-      }
-
-      // 4. Fetch /experiments
-      try {
-        const resp = await fetch(`${API_BASE_URL}/experiments`);
-        if (resp.ok) setExperimentsData(await resp.json());
-      } catch (err) {
-        console.log('Experiments fetch info:', err);
-      }
-
-      // 5. Fetch /projections
-      try {
-        const resp = await fetch(`${API_BASE_URL}/projections`);
-        if (resp.ok) {
-          const d = await resp.json();
-          if (d && d.projections) setProjectionsData(d.projections);
+        let resp;
+        try {
+          resp = await fetch(`${API_BASE_URL}${endpoint}`);
+        } catch (err) {
+          resp = await fetch(`http://localhost:8000${endpoint}`);
+        }
+        if (resp && resp.ok) {
+          return await resp.json();
         }
       } catch (err) {
-        console.log('Projections fetch info:', err);
+        // Silently catch network errors if backend is not reachable yet
       }
+      return null;
+    };
+
+    const fetchRealBackendData = async () => {
+      const [health, metrics, segments, experiments, projections] = await Promise.all([
+        fetchWithFallback('/health'),
+        fetchWithFallback('/metrics'),
+        fetchWithFallback('/segments'),
+        fetchWithFallback('/experiments'),
+        fetchWithFallback('/projections'),
+      ]);
+
+      if (health) setApiHealth(health);
+      if (metrics) setMetricsData(metrics);
+      if (segments) setSegmentProfiles(segments);
+      if (experiments) setExperimentsData(experiments);
+      if (projections && projections.projections) setProjectionsData(projections.projections);
     };
 
     fetchRealBackendData();
@@ -75,8 +65,8 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-mesh bg-[#F8FAFC] text-slate-900 flex flex-col font-sans relative selection:bg-indigo-600 selection:text-white">
-      {/* Floating Glass Navigation Header */}
+    <div className="h-screen h-[100dvh] w-full overflow-hidden bg-mesh bg-[#F8FAFC] text-slate-900 flex flex-col font-sans relative selection:bg-indigo-600 selection:text-white">
+      {/* Floating Glass Navigation Header (Fixed at top) */}
       <Header 
         activeTab={activeTab} 
         setActiveTab={setActiveTab} 
@@ -92,8 +82,8 @@ export default function App() {
         onSelectDemo={handleSelectDemoFromPalette}
       />
 
-      {/* Main Floating Content Viewport */}
-      <main className="flex-1 px-4 sm:px-8 pb-12 max-w-7xl mx-auto w-full">
+      {/* Main Internal Scrolling Content Viewport (Fit-To-Screen Shell) */}
+      <main className="flex-1 min-h-0 overflow-y-auto overflow-x-hidden px-3 sm:px-6 md:px-8 pb-10 max-w-7xl mx-auto w-full custom-scrollbar">
         {activeTab === 'landing' && (
           <LandingView 
             setActiveTab={setActiveTab} 
@@ -121,6 +111,10 @@ export default function App() {
           <AnalyzerView apiBaseUrl={API_BASE_URL} selectedDemoIdx={selectedDemoIdx} />
         )}
 
+        {activeTab === 'retention' && (
+          <RetentionView apiBaseUrl={API_BASE_URL} />
+        )}
+
         {activeTab === 'evaluation' && (
           <EvaluationView 
             metricsData={metricsData} 
@@ -134,6 +128,10 @@ export default function App() {
 
         {activeTab === 'architecture' && (
           <ArchitectureView />
+        )}
+
+        {activeTab === 'about' && (
+          <AboutView />
         )}
       </main>
     </div>
